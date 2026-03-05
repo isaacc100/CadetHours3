@@ -1,0 +1,52 @@
+:root {
+  --primary: #0d6efd;
+  --bg: #ffffff;
+  --surface: #f8f9fa;
+  --text: #212529;
+  --border: #dee2e6;
+  --muted: #6c757d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --surface: #1e1e1e;
+    --text: #e0e0e0;
+    --border: #444;
+    --muted: #aaa;
+  }
+
+  body {
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
+  }
+
+  .card,
+  .modal-content,
+  .dropdown-menu {
+    background-color: var(--surface) !important;
+    border-color: var(--border) !important;
+    color: var(--text) !important;
+  }
+
+  .table {
+    color: var(--text) !important;
+  }
+
+  .form-control,
+  .form-select {
+    background-color: var(--surface) !important;
+    border-color: var(--border) !important;
+    color: var(--text) !important;
+  }
+
+  .navbar {
+    background-color: var(--surface) !important;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+.chart-container {
+  position: relative;
+  height: 300px;
+}
